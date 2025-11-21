@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Password Generator + Strength Checker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <img src="pg-logo.png" alt="logo"/>
+      </div>
+      <div>
+        <h1>Password Generator + Strength Checker</h1>
+        <p class="lead">Generate strong passwords and check strength instantly — This project, Password Generator and Strength Checker, is a web-based application built using HTML, CSS, and JavaScript. The main purpose of this project is to help users create strong, secure, and unpredictable passwords by generating random combinations of characters and analyzing their strength in real time.</p>
+      </div>
+    </header>
+
+    <div class="card grid">
+      <div>
+        <div class="controls">
+          <label class="field">
+            <span>Password Length <strong id="lenVal">16</strong></span>
+            <div class="rangewrap"><input id="length" type="range" min="4" max="64" value="16"/><div class="small">chars</div></div>
+          </label>
+
+          <label class="field">Character sets</label>
+          <div class="options">
+            <label class="chip"><input id="lower" type="checkbox" checked/> a-z</label>
+            <label class="chip"><input id="upper" type="checkbox" checked/> A-Z</label>
+            <label class="chip"><input id="numbers" type="checkbox" checked/> 0-9</label>
+            <label class="chip"><input id="symbols" type="checkbox" checked/> !@#$%^&*</label>
+          </div>
+
+          <div class="row">
+            <button id="generate" class="btn btn-primary">Generate Password</button>
+            <button id="copyBtn" class="btn btn-ghost">Copy</button>
+            <button id="shuffleBtn" title="Generate and focus" class="btn btn-ghost">Shuffle</button>
+          </div>
+
+          <div class="result">
+            <div class="pw-row">
+              <input id="password" class="pw" readonly aria-label="generated password" value=""/>
+              <button id="showBtn" class="btn btn-ghost">Show</button>
+            </div>
+
+            <div>
+              <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
+              <div class="meter-label"><span id="strengthLabel">Strength: —</span><span id="entropy">Entropy: — bits</span></div>
+            </div>
+
+            <div id="suggestions" class="small" aria-live="polite"></div>
+          </div>
+
+          <div class="field">
+            <label class="small">Advanced options</label>
+            <div class="row">
+              <button id="saveBtn" class="btn btn-ghost">Save to history</button>
+              <button id="clearHistory" class="btn btn-ghost">Clear History</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <aside class="panel">
+        <div class="stat">
+          <h3 style="margin:0 0 6px 0;font-size:14px">Quick Tips</h3>
+          <ul style="margin:0;padding-left:18px;color:var(--muted);font-size:13px">
+            <li>Use at least 12 characters for general accounts.</li>
+            <li>Enable multiple character types to increase entropy.</li>
+            <li>Do not reuse passwords across important accounts.</li>
+            <li>Use a password manager for long complex passwords.</li>
+          </ul>
+        </div>
+
+        <div class="stat">
+          <h3 style="margin:0 0 6px 0;font-size:14px">History</h3>
+          <div class="history" id="history"></div>
+        </div>
+
+        <div class="stat">
+          <h3 style="margin:0 0 6px 0;font-size:14px">Password rules preview</h3>
+          <div class="small">Length: <span id="ruleLen">16</span></div>
+          <div class="small">Sets: <span id="ruleSets">lower, upper, numbers, symbols</span></div>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+      Tip: Save passwords in the <strong>History</strong> if you want quick reuse in this browser (stored locally).</footer>
+  </div>
+<script src="js/script.js"></script>
+</body>
+</html>
