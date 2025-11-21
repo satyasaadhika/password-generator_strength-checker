@@ -6,9 +6,11 @@ This project, Password Generator and Strength Checker, is a web-based applicatio
 This project is perfect for students and beginners learning JavaScript DOM manipulation and localStorage.
 
 ---
+[![Password Generator]()](https://satyasaadhika.github.io/password-generator_strength-checker/)
+
+
 
 ## 🚀 Features
-
 ### ✔️ Password Generator  
 - Adjustable length (6–32)  
 - Options to include:  
@@ -80,7 +82,5 @@ Generated passwords are saved automatically in history.
    ```bash
    https://github.com/satyasaadhika/password-generator_strength-checker.git
   ```
-2. Open index.html in any browser — no server needed
-🌐 Live Demo- [Demo](https://satyasaadhika.github.io/password-generator_strength-checker/)
 
 
