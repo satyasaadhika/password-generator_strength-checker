@@ -81,5 +81,6 @@ Generated passwords are saved automatically in history.
    https://github.com/satyasaadhika/password-generator_strength-checker.git
   ```
 2. Open index.html in any browser — no server needed
-🌐 Live Demo- https://satyasaadhika.github.io/password-generator_strength-checker/
+🌐 Live Demo- [Demo](https://satyasaadhika.github.io/password-generator_strength-checker/)
+
 
