@@ -6,8 +6,7 @@ This project, Password Generator and Strength Checker, is a web-based applicatio
 This project is perfect for students and beginners learning JavaScript DOM manipulation and localStorage.
 
 ---
-[![Password Generator](<img width="1536" height="1024" alt="demo" src="https://github.com/user-attachments/assets/72cc02f9-9f69-4e56-b752-86f0ec079d9d" />
-)](https://satyasaadhika.github.io/password-generator_strength-checker/)
+[![Password Generator](https://github.com/user-attachments/assets/72cc02f9-9f69-4e56-b752-86f0ec079d9d)](https://satyasaadhika.github.io/password-generator_strength-checker/)
 
 
 
