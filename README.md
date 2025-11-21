@@ -75,12 +75,8 @@ The strength bar updates in real time.
 Generated passwords are saved automatically in history.
 
 ---
-
-## 📦 Installation & Usage  
-### 👉 Local Setup  
 1. Download or clone the repository  
    ```bash
    https://github.com/satyasaadhika/password-generator_strength-checker.git
-  ```
 
 
